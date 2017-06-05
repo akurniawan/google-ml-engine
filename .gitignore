@@ -1,0 +1,5 @@
+*.swp
+*~
+output
+data
+*.pyc
