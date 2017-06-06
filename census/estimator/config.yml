@@ -1,0 +1,17 @@
+trainingInput:
+  scaleTier: CUSTOM
+  masterType: complex_model_m
+  workerType: complex_model_m
+  parameterServerType: large_model
+  workerCount: 9
+  parameterServerCount: 3
+  hyperparameters:
+    goal: MAXIMIZE
+    maxTrials: 30
+    maxParallelTrials: 1
+    params:
+    - parameterName: hidden1
+      type: INTEGER
+      minValue: 40
+      maxValue: 400
+      scaleType: UNIT_LINEAR_SCALE
